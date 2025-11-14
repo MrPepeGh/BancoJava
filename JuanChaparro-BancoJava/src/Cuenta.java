@@ -37,7 +37,6 @@ public class Cuenta {
         System.out.println("Retiro exitoso. Nuevo saldo: " + saldo);
     }
 
-    // Nueva funcionalidad 1: Transferencia
     public void transferir(Cuenta destino, double monto) {
         if (destino == null) {
             System.out.println("Error: La cuenta destino no existe.");
@@ -57,7 +56,6 @@ public class Cuenta {
         System.out.println("Transferencia de " + monto + " realizada a " + destino.getTitular());
     }
 
-    // Nueva funcionalidad 2: Aplicar interés
     public void aplicarInteres(double porcentaje) {
         if (porcentaje < 0) {
             System.out.println("Error: El interés no puede ser negativo.");
@@ -68,4 +66,5 @@ public class Cuenta {
         saldo += interes;
         System.out.println("Interés aplicado (" + porcentaje + "%). Nuevo saldo: " + saldo);
     }
+
 }
